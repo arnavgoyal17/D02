@@ -8,12 +8,11 @@
 # Write your functions below:
 # Body
 
-
-
-
-
-
-
+def do_n(fName, count):
+	count = count - 1
+	if(count >= 0):
+		fName()
+		do_n(fName, count)
 
 
 # Write your functions above:
@@ -25,8 +24,7 @@ def main():
     When complete have one function call in this function:
     do_n(print_hello, 10)
     """
-    print_hello() # replace this with do_n(print_hello, 10)
-
+    do_n(print_hello, 10)
 
 
 if __name__ == "__main__":

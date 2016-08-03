@@ -40,16 +40,91 @@
 # Write your functions below:
 # Body
 
+def do_twice(fName, value):
+	fName(value)
+	fName(value)
 
+def print_twice(vString):
+	print(vString)
 
+def print_twice_inline(vString):
+	print(vString, end = ' ')
 
+def do_four(fName, value):
+	do_twice(fName, value)
+	do_twice(fName, value)
 
+def print_2x2():
+	# print('+', do_four(print_twice_inline, '- '), end = ' ')
+	# print('+', do_four(print_twice_inline, '- '), end = ' ')
+	# print('+', do_four(print_twice_inline, '- '), end = ' ')
+	# print('+', do_four(print_twice_inline, '- '), end = ' ')
+	# print('+')
+	# do_four(print_twice_inline, '|         ')
+	# do_four(print_twice_inline, '|         ')
+	# do_four(print_twice_inline, '|         ')
+	# do_four(print_twice_inline, '|         ')
 
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')
+	print('+')
+	print('|         |         |')
+	print('|         |         |')
+	print('|         |         |')
+	print('|         |         |')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')
+	print('+')
+	print('|         |         |')
+	print('|         |         |')
+	print('|         |         |')
+	print('|         |         |')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')
+	print('+')
 
-
-
-
-
+def print_4x4():
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')	
+	print('+')
+	print('|         |         |         |         |')
+	print('|         |         |         |         |')
+	print('|         |         |         |         |')
+	print('|         |         |         |         |')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')	
+	print('+')
+	print('|         |         |         |         |')
+	print('|         |         |         |         |')
+	print('|         |         |         |         |')
+	print('|         |         |         |         |')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')	
+	print('+')
+	print('|         |         |         |         |')
+	print('|         |         |         |         |')
+	print('|         |         |         |         |')
+	print('|         |         |         |         |')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')	
+	print('+')
+	print('|         |         |         |         |')
+	print('|         |         |         |         |')
+	print('|         |         |         |         |')
+	print('|         |         |         |         |')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')
+	print('+', '- - - -', end=' ')	
+	print('+')
 
 # Write your functions above:
 ################################################################################
@@ -61,8 +136,13 @@ def main():
     """
     print("Hello World!")
     
+    print()
 
+    print_2x2()
 
+    print()
+
+    print_4x4()
 
 if __name__ == "__main__":
     main()
